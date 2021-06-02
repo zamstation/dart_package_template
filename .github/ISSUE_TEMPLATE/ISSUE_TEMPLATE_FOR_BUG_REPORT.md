@@ -2,32 +2,29 @@
 name: Bug report
 about: Create a report to help us improve
 title: "Example: Command's execute method does not accept void return type"
-labels: bug, dart package
+labels: bug
 assignees: amsakanna
 
 ---
 
+## Meta
+| Name | Description |
+| -----| ----------- |
+| Version | x.x.x |
+| Scope | File -> Class -> Method/Field |
+
 ## Description
 A clear and concise description of what the bug is.
-
-**Version** x.x.x
-Version of the package where this bug is.
-Example: 1.6.2
-
-**Scope** File -> Class -> Method/Field
-Location of the bug. Provide the file name, class name and the method/field name in the below format. If you want to specify more than one location, separate them by commas.
-
-Example: command.dart -> Command -> execute
 
 ## Steps to Reproduce
 1. Create an object of '...'
 2. Set field '...'
 3. Call method '...'
 
-**Actual result**
+### Actual result
 A clear and concise description of what happened.
 
-**Expected result**
+### Expected result
 A clear and concise description of what you expected to happen.
 
 ## Screenshots
