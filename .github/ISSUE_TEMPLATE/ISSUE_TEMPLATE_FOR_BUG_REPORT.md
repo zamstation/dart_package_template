@@ -1,7 +1,6 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: "Example: Command's execute method does not accept void return type"
 labels: bug
 assignees: amsakanna
 
