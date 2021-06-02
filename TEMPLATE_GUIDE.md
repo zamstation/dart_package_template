@@ -22,6 +22,6 @@
 
 - [ ] Replace @component_n@ with your component names.
 
-## lib/zam_.dart
+## lib/package_name.dart
 
-- [ ] Rename zam_.dart to zam_@package_name@.dart
+- [ ] Rename package_name.dart to zam_@package_name@.dart
