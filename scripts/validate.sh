@@ -97,6 +97,7 @@ declare -A patterns
 patterns=(
 	["name"]="^name: $packageName$"
 	["version"]="^version: [0-9]+[.][0-9]+[.][0-9]+$"
+	["description"]="^description: .{60,}$"
 	["homepage"]="^homepage: https://zamstation.com$"
 	["repository"]="^repository: https://github.com/zamstation/$packageName$"
 	["environment"]="^environment:$"
