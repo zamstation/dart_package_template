@@ -24,4 +24,4 @@ Check out all the components in detail [here](https://pub.dev/documentation/@pac
 To learn more, move on to the [example section](https://pub.dev/packages/@package_name@/example) or check out this dedicated [example in github](https://github.com/zamstation/@package_name@/blob/main/example/lib/main.dart).
 
 ## Contributors
-  * Amsakanna
+  * [Amsakanna](https://github.com/amsakanna)

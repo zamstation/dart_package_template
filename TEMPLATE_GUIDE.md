@@ -4,7 +4,6 @@
 # CHECKLIST
 
 ## pubspec.yaml
-
 - [ ] In name field, replace package_name with your package name.
 - [ ] In description field, add description not less than 80 characters.
 - [ ] In repository field, replace package_name with your package name.
@@ -22,6 +21,13 @@
 
 - [ ] Replace @component_n@ with your component names.
 
-## lib/zam_.dart
+## lib/package_name.dart
+- [ ] Rename package_name.dart to zam_@package_name@.dart
 
-- [ ] Rename zam_.dart to zam_@package_name@.dart
+## .github/workflows/build.yml
+- [ ] Remove branches-ignore
+- [ ] Uncomment branches
+
+## .github/workflows/build_dev.yml
+- [ ] Remove branches-ignore
+- [ ] Uncomment branches

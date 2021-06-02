@@ -1,11 +1,17 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: "Example: Create AsyncCommand extending Command"
-labels: feature, dart package
+title: "Feature: "
+labels: feature
 assignees: amsakanna
 
 ---
+
+## Meta
+| Name | Description |
+| -----| ----------- |
+| Version | x.x.x |
+| Scope | File -> Class -> Method/Field |
 
 ## Problem Statement
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
