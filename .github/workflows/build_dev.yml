@@ -2,11 +2,23 @@ name: Dev Build
 
 on:
   push:
-    branches:
-      - develop
+    branches-ignore: ['**']
+    # branches:
+    #   - 'develop'
+    #   - 'bugfix/**'
+    #   - 'feature/**'
+    #   - 'release/**'
+    #   - 'hotfix/**'
+    #   - 'support/**'
   pull_request:
-    branches:
-      - develop
+    branches-ignore: ['**']
+    # branches:
+    #   - 'develop'
+    #   - 'bugfix/**'
+    #   - 'feature/**'
+    #   - 'release/**'
+    #   - 'hotfix/**'
+    #   - 'support/**'
 
 jobs:
   build:
