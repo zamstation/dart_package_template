@@ -1,6 +1,6 @@
 name: package_name
 version: 0.0.1
-description: << Description (not less than 60 characters) >>.
+description: << Description (not less than 80 characters) >>.
 homepage: https://zamstation.com
 repository: https://github.com/zamstation/package_name
 
