@@ -10,32 +10,44 @@
 #			- Formats Code
 #			- Runs dart analyze
 #
-#		Arguments:
-#			1. package name
+#		Arguments: <none>
 #
 #		Errors:
-#			101: ARGUMENT_ERROR
+#			101: PUBSPEC_NOT_FOUND_ERROR
 #			102: DIRECTORY_NOT_FOUND_ERROR
 #			103: FILE_NOT_FOUND_ERROR
 #			104: PUBSPEC_VALIDATION_ERROR
 #
 #-----------------------------------------------------------------------------
 
-#
-# Initialize
-#
-echo ""
-packageName='test'
-if [[ $1 == '' ]]; then
-	echo "[ARGUMENT_ERROR]: Please provide a package name while running the script."
-	exit 101
-fi
-packageName=$1
+# SETUP
+scriptDirectory="$(dirname "$0")"
+scriptName="$(basename "$0")"
+source "$scriptDirectory/logger.sh" $scriptName
+errorList=(
+	"PUBSPEC_NOT_FOUND_ERROR"
+	"DIRECTORY_NOT_FOUND_ERROR"
+	"FILE_NOT_FOUND_ERROR"
+	"PUBSPEC_VALIDATION_ERROR"
+)
+source "$scriptDirectory/error_thrower.sh" $scriptName $errorList
 
 #
-# Check if all the required directories exist.
+# Extracting package name from pubspec
 #
-echo -e "- Checking if all the required directories exist ..."
+logStep "Extracting package name from pubspec"
+
+if [[ ! -f "pubspec.yaml" ]]; then
+	throwAndExit "PUBSPEC_NOT_FOUND_ERROR" "pubspec.yaml file is not found in the root directory."
+fi
+
+packageName=$(grep "name:" "pubspec.yaml" | cut -d ":" -f2 | xargs)
+logMeta "Package Name" "$packageName"
+
+#
+# Checking required directories
+#
+logStep "Checking required directories"
 
 directories=(
 	".github"
@@ -51,18 +63,17 @@ directories=(
 
 for directory in ${directories[@]}; do
 	if [[ -d $directory ]]; then
-		echo "[✓] $directory"
+		logCheck "$directory"
 	else
-		echo "[x] $directory directory does not exist."
-		echo -e "\n[DIRECTORY_NOT_FOUND_ERROR]: directory $directory does not exist."
-		exit 102
+		logUnCheck "$directory"
+		throwAndExit "DIRECTORY_NOT_FOUND_ERROR" "$directory does not exist."
 	fi
 done
 
 #
-# Check if all the required files exist.
+# Checking required files
 #
-echo -e "\n- Checking if all the required files exist ..."
+logStep "Checking required files"
 
 files=(
 	"README.md"
@@ -80,18 +91,17 @@ files=(
 
 for file in ${files[@]}; do
 	if [[ -f $file ]]; then
-		echo "[✓] $file"
+		logCheck "$file"
 	else
-		echo "[x] $file file does not exist."
-		echo -e "\n[FILE_NOT_FOUND_ERROR]: file $file does not exist."
-		exit 103
+		logUnCheck "$file"
+		throwAndExit "FILE_NOT_FOUND_ERROR" "$file does not exist."
 	fi
 done
 
 #
-# Validate pubspec.yaml file
+# Validating pubspec
 #
-echo -e "\n- Validating pubspec.yaml file ..."
+logStep "Validating pubspec"
 
 declare -A patterns
 patterns=(
@@ -107,15 +117,17 @@ patterns=(
 for field in "${!patterns[@]}"; do
 	matches=$(grep -cE "${patterns[$field]}" "pubspec.yaml")
 	if [ $matches -eq 1 ]; then
-		echo "[✓] $field"
+		logCheck "$field"
 	else
-		echo "[x] $field"
-		echo -e "\n[PUBSPEC_VALIDATION_ERROR]: $field field is invalid.\nExpected Format:\n${patterns[$field]}"
-		exit 103
+		logUnCheck "$field"
+		throwAndExit "PUBSPEC_VALIDATION_ERROR" "$field field is invalid.\n\tExpected Format:${patterns[$field]}"
 	fi
 done
 
-# End
+#
+# END
+#
+logEnd
 exit 0
 
 #-----------------------------------------------------------------------------

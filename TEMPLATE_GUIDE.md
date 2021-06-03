@@ -31,3 +31,7 @@
 ## .github/workflows/build_dev.yml
 - [ ] Remove branches-ignore
 - [ ] Uncomment branches
+
+## test
+- [ ] Remove dummy_test.dart when you have created your first test. You need to have at least one test to satisfy the publish.sh script.
+- [ ] Remove _setup.dart if not required.
