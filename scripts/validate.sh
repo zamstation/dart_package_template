@@ -14,7 +14,7 @@
 #			1. package name
 #
 #		Errors:
-#			101: ARGUMENT_ERROR
+#			101: PUBSPEC_NOT_FOUND_ERROR
 #			102: DIRECTORY_NOT_FOUND_ERROR
 #			103: FILE_NOT_FOUND_ERROR
 #			104: PUBSPEC_VALIDATION_ERROR
@@ -25,12 +25,13 @@
 # Initialize
 #
 echo ""
-packageName='test'
-if [[ $1 == '' ]]; then
-	echo "[ARGUMENT_ERROR]: Please provide a package name while running the script."
+if [[ ! -f "pubspec.yaml" ]]; then
+	echo "[PUBSPEC_NOT_FOUND_ERROR]: pubspec.yaml file is not found in the root directory."
 	exit 101
 fi
-packageName=$1
+
+packageName=$(grep "name:" "pubspec.yaml" | cut -d ":" -f2 | xargs)
+echo "Package Name: $packageName"
 
 #
 # Check if all the required directories exist.
