@@ -1,5 +1,5 @@
 # TEMPLATE_GUIDE
-<< [CAUTION]: Remove this file before your first commit. >>
+***<< [CAUTION]: Remove this file before your first commit. >>***
 
 # CHECKLIST
 
@@ -17,21 +17,22 @@
 - [ ] Replace @how_to_use@ with usage and examples.
 - [ ] Add contributors as necessary.
 
-## CHANGELOG.md
-
-- [ ] Replace @component_n@ with your component names.
-
 ## lib/package_name.dart
-- [ ] Rename package_name.dart to zam_@package_name@.dart
+- [ ] Rename package_name.dart to @package_name@.dart
+- [ ] Add your files.
 
 ## .github/workflows/build.yml
-- [ ] Remove branches-ignore
-- [ ] Uncomment branches
-
-## .github/workflows/build_dev.yml
-- [ ] Remove branches-ignore
-- [ ] Uncomment branches
+- [ ] Remove "**" from branches-ignore array. Leave "temp".
 
 ## test
 - [ ] Remove dummy_test.dart when you have created your first test. You need to have at least one test to satisfy the publish.sh script.
 - [ ] Remove _setup.dart if not required.
+
+## example/lib/main
+- [ ] Add your example.
+
+## CHANGELOG.md
+- [ ] Replace @component_n@ with your component names.
+
+## TEMPLATE_GUIDE.md (This File)
+- [ ] Remove this file.
