@@ -2,7 +2,7 @@
 ***<< [CAUTION]: Remove this file before your first commit. >>***
 
 ## META
-Version: 0.3.0
+Version: 0.4.0
 
 ## CHECKLIST
 
