@@ -5,7 +5,7 @@
 
 ## pubspec.yaml
 - [ ] In name field, replace package_name with your package name.
-- [ ] In description field, add description not less than 80 characters.
+- [ ] In description field, add description not less than 60 characters.
 - [ ] In repository field, replace package_name with your package name.
 - [ ] In dependencies field, remove zam_core if not needed.
 
