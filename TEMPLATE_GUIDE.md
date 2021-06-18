@@ -21,7 +21,7 @@
 - [ ] Rename package_name.dart to @package_name@.dart
 - [ ] Add your files.
 
-## .github/workflows/build.yml
+## .github/workflows/build.yaml
 - [ ] Remove "**" from branches-ignore array. Leave "temp".
 
 ## test

@@ -3,7 +3,7 @@
 @description@  
   
 [![Version](https://img.shields.io/pub/v/@package_name@?color=%234287f5)](https://pub.dev/packages/@package_name@)
-[![Build](https://github.com/zamstation/@package_name@/actions/workflows/build.yml/badge.svg)](https://github.com/zamstation/@package_name@/actions/workflows/build.yml)
+[![Build](https://github.com/zamstation/@package_name@/actions/workflows/build.yaml/badge.svg)](https://github.com/zamstation/@package_name@/actions/workflows/build.yaml)
 [![Stars](https://img.shields.io/github/stars/zamstation/@package_name@.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/zamstation/@package_name@/stargazers)
 [![License](https://img.shields.io/github/license/zamstation/@package_name@)](https://pub.dev/packages/@package_name@/license)
 
