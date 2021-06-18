@@ -1,6 +1,6 @@
 # Dart Package Template
 
-**Version:** 0.4.0
+**Version:** 0.5.0
 
 This repository acts as a template repository for all dart packages released by zamstation.
 
