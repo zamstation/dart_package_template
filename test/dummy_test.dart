@@ -1,4 +1,4 @@
-import 'package:zam_test/original_test.dart';
+import 'package:zam_test/zam_test.dart';
 
 void main() {
   test('Dummy Test', () {
