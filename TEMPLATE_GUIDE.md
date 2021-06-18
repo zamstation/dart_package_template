@@ -1,15 +1,18 @@
-# TEMPLATE_GUIDE
+# Template Guide
 ***<< [CAUTION]: Remove this file before your first commit. >>***
 
-# CHECKLIST
+## META
+Version: 0.3.0
 
-## pubspec.yaml
+## CHECKLIST
+
+### pubspec.yaml
 - [ ] In name field, replace package_name with your package name.
 - [ ] In description field, add description not less than 60 characters.
 - [ ] In repository field, replace package_name with your package name.
 - [ ] In dependencies field, remove zam_core if not needed.
 
-## README.md
+### README.md
 - [ ] Replace @package_title@ with package title.
 - [ ] Replace @description@ with description.
 - [ ] Replace 18 occurences of @package_name@ with package name.
@@ -17,22 +20,22 @@
 - [ ] Replace @how_to_use@ with usage and examples.
 - [ ] Add contributors as necessary.
 
-## lib/package_name.dart
+### lib/package_name.dart
 - [ ] Rename package_name.dart to @package_name@.dart
 - [ ] Add your files.
 
-## .github/workflows/build.yaml
+### .github/workflows/build.yaml
 - [ ] Remove "**" from branches-ignore array. Leave "temp".
 
-## test
+### test
 - [ ] Remove dummy_test.dart when you have created your first test. You need to have at least one test to satisfy the publish.sh script.
 - [ ] Remove _setup.dart if not required.
 
-## example/lib/main
+### example/lib/main
 - [ ] Add your example.
 
-## CHANGELOG.md
+### CHANGELOG.md
 - [ ] Replace @component_n@ with your component names.
 
-## TEMPLATE_GUIDE.md (This File)
+### TEMPLATE_GUIDE.md (This File)
 - [ ] Remove this file.
