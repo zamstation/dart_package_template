@@ -21,17 +21,17 @@ When a repository is created using this template, one must go through the follow
 ### README.md
 - [ ] Replace @package_title@ with package title.
 - [ ] Replace @description@ with description.
-- [ ] Replace 19 occurences of @package_name@ with package name.
+- [ ] Replace 12 occurences of @package_name@ with package name.
 - [ ] Replace 6 occurences of @component_n@ with component names.
 - [ ] Replace @how_to_use@ with usage and examples.
 - [ ] Add contributors as necessary.
 
+### .github/workflows/build.yaml
+- [ ] Remove `"**"` from branches-ignore array. Leave `temp`.
+
 ### lib/package_name.dart
 - [ ] Rename package_name.dart to @package_name@.dart
 - [ ] Add your files.
-
-### .github/workflows/build.yaml
-- [ ] Remove `"**"` from branches-ignore array. Leave `temp`.
 
 ### test
 - [ ] Remove `dummy_test.dart` when you have created your first test. You need to have at least one test to satisfy the `publish.sh` script.
