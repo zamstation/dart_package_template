@@ -2,11 +2,6 @@
 
 @description@  
   
-[![Version](https://img.shields.io/pub/v/@package_name@?color=%234287f5)](https://pub.dev/packages/@package_name@)
-[![Build](https://github.com/zamstation/@package_name@/actions/workflows/build.yaml/badge.svg)](https://github.com/zamstation/@package_name@/actions/workflows/build.yaml)
-[![Stars](https://img.shields.io/github/stars/zamstation/@package_name@.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/zamstation/@package_name@/stargazers)
-[![License](https://img.shields.io/github/license/zamstation/@package_name@)](https://pub.dev/packages/@package_name@/license)
-
 ## What's inside the package
 
 Includes the following core components.
@@ -25,3 +20,6 @@ To learn more, move on to the [example section](https://pub.dev/packages/@packag
 
 ## Contributors
   * [Amsakanna](https://github.com/amsakanna)
+
+## License
+[BSD 3-Clause License](https://github.com/zamstation/dart_package_template/blob/main/LICENSE)
