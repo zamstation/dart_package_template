@@ -22,4 +22,4 @@ To learn more, move on to the [example section](https://pub.dev/packages/@packag
   * [Amsakanna](https://github.com/amsakanna)
 
 ## License
-[BSD 3-Clause License](https://github.com/zamstation/dart_package_template/blob/main/LICENSE)
+[BSD 3-Clause License](https://github.com/zamstation/@package_name@/blob/main/LICENSE)
