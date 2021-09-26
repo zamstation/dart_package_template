@@ -18,8 +18,8 @@ Check out all the components in detail [here](https://pub.dev/documentation/@pac
 
 To learn more, move on to the [example section](https://pub.dev/packages/@package_name@/example) or check out these dedicated [examples in github](https://github.com/zamstation/@package_name@/blob/main/example/lib).
 
-## Build
-[![Build](https://github.com/zamstation/@package_name@/actions/workflows/deploy_workflow.yaml/badge.svg)](https://github.com/zamstation/@package_name@/actions/workflows/deploy_workflow.yaml)
+## Status
+[![Build](https://github.com/zamstation/@package_name@/actions/workflows/build_workflow.yaml/badge.svg)](https://github.com/zamstation/@package_name@/actions/workflows/build_workflow.yaml)
 
 ## Contributors
 - [Amsakanna](https://github.com/amsakanna)

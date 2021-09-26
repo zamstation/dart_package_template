@@ -21,16 +21,16 @@ When a repository is created using this template, one must go through the follow
 ### README.md
 - [ ] Replace @package_title@ with package title.
 - [ ] Replace @description@ with description.
-- [ ] Replace 14 occurences of @package_name@ with package name.
+- [ ] Replace 11 occurences of @package_name@ with package name.
 - [ ] Replace 6 occurences of @component_n@ with component names.
 - [ ] Replace 3 occurences of @component_path@ with component paths.
 - [ ] Replace @how_to_use@ with usage and examples.
 - [ ] Add contributors as necessary.
 
-### .github/workflows/build.yaml
+### .github/workflows/build_workflow.yaml
 - [ ] Remove `"**"` from `branches-ignore` array. Leave `ignore`.
 
-### .github/workflows/deploy.yaml
+### .github/workflows/release_workflow.yaml
 - [ ] Remove `"**"` from `tags-ignore array`. Leave `ignore`.
 
 ### lib/package_name.dart
