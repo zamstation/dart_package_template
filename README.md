@@ -23,6 +23,7 @@ When a repository is created using this template, one must go through the follow
 - [ ] Replace @description@ with description.
 - [ ] Replace 12 occurences of @package_name@ with package name.
 - [ ] Replace 6 occurences of @component_n@ with component names.
+- [ ] Replace 3 occurences of @component_path@ with component paths.
 - [ ] Replace @how_to_use@ with usage and examples.
 - [ ] Add contributors as necessary.
 
