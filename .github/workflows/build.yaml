@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches-ignore: ["**", temp]
+    branches-ignore: ["**", "ignore"]
   pull_request:
-    branches-ignore: ["**", temp]
+    branches-ignore: ["**", "ignore"]
 
 jobs:
   test:

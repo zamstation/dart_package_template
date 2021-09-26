@@ -27,7 +27,10 @@ When a repository is created using this template, one must go through the follow
 - [ ] Add contributors as necessary.
 
 ### .github/workflows/build.yaml
-- [ ] Remove `"**"` from branches-ignore array. Leave `temp`.
+- [ ] Remove `"**"` from `branches-ignore` array. Leave `ignore`.
+
+### .github/workflows/deploy.yaml
+- [ ] Remove `"**"` from `tags-ignore array`. Leave `ignore`.
 
 ### lib/package_name.dart
 - [ ] Rename package_name.dart to @package_name@.dart
