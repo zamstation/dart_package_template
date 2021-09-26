@@ -11,4 +11,5 @@ dependencies:
   zam_core: ^0.5.0
 
 dev_dependencies:
+  lints: ^1.0.1
   zam_test: ^0.3.0
