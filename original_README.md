@@ -6,9 +6,9 @@
 
 Includes the following core components.
 
-- [@component_1@](https://pub.dev/documentation/@package_name@/latest/@component_path@/@component_1@-class.html)
-- [@component_2@](https://pub.dev/documentation/@package_name@/latest/@component_path@/@component_2@-class.html)
-- [@component_3@](https://pub.dev/documentation/@package_name@/latest/@component_path@/@component_3@-class.html)
+- [@component_1@](https://pub.dev/documentation/@package_name@/latest/@package_name@/@component_1@-class.html)
+- [@component_2@](https://pub.dev/documentation/@package_name@/latest/@package_name@/@component_2@-class.html)
+- [@component_3@](https://pub.dev/documentation/@package_name@/latest/@package_name@/@component_3@-class.html)
 
 Check out all the components in detail [here](https://pub.dev/documentation/@package_name@/latest/@package_name@/@package_name@-library.html)
 
